@@ -1,0 +1,25 @@
+#your_unique_start_date_id {
+    width: 90% !important;
+    font-size: 19px !important;
+}
+
+#your_unique_end_date_id {
+    @extend #your_unique_start_date_id;
+}
+
+.text-input {
+    border: 1px solid #cacccd;
+    height: 48px;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;
+}
+
+.select {
+    @extend .text-input;
+}
+
+.textarea {
+    @extend .text-input;
+    height: 10rem;
+}

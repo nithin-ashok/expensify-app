@@ -1,0 +1,26 @@
+.button {
+    background: $blue;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 3px;
+}
+
+.button--link {
+    background: none;
+}
+
+.button--remove {
+    @extend .button;
+    background: rgb(179, 57, 57);
+    margin-top: -15px;
+    margin-bottom: $s-size;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: $l-size;
+    }
+}
